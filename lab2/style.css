@@ -1,0 +1,23 @@
+#slider {
+    width: 600px;
+    height: 400px;
+    margin: 100px auto 0 auto;
+    overflow: hidden;
+}
+
+#slider .slides {
+    display: flex;
+    animation-name: swipe-left;
+    animation-duration: 4 s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes swipe-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-2000px);
+    }
+}
