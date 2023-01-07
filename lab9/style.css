@@ -17,7 +17,6 @@ body {
 
 .card {
     background: rgba(252, 252, 252, 0.8);
-    
     padding: 2em;
     border-radius: 30px;
     width: 100%;
@@ -25,16 +24,16 @@ body {
     margin: 1em;
 }
 
-h1.temperature {
-    margin: 0; 
+h1.temperature { 
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .search {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 0.1em;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
 }
 
 button {
@@ -65,4 +64,27 @@ input.search-bar {
 
 button:hover{
     background: #7c7c7c6b;
+}
+
+.description {
+    text-transform: capitalize;
+}
+
+.flex {
+    
+    align-items: center;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
 }
